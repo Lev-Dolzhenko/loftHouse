@@ -1,0 +1,13 @@
+.feedback {
+    padding-bottom: 180px;
+}
+
+.feedback-title {
+    margin-bottom: 38px;
+}
+
+.feedback__form {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+}

@@ -1,0 +1,81 @@
+.cta {
+    padding-top: 180px;
+    padding-bottom: 180px;
+    background: linear-gradient(180deg, #242B33 10.42%, rgba(36, 43, 51, 0.00) 50.52%, #242B33 90.1%),
+    linear-gradient(0deg, rgba(36, 43, 51, 0.90) 0%, rgba(36, 43, 51, 0.90) 100%),
+    url('/img/cta/background.jpg'),
+    lightgray 50%;
+}
+
+.cta__titile {
+    margin-bottom: 17px;
+}
+
+.cta__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+}
+
+.cta__text {
+    line-height: 1.5;
+}
+
+.form {
+
+    p {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        font-size: 13px;
+        line-height: 1.23;
+        color: $muted;
+        text-align: center
+    }
+
+    input {
+        height: 50px;
+        padding: 12px;
+
+        font-size: 14px;
+        text-align: center;
+        color: $white;
+
+        background-color: rgb(255, 255, 255, 0.2);
+
+        transition: background-color 0.2s ease-in;
+
+        &::placeholder {
+            color: $placeholder;
+            ;
+        }
+
+        &:focus {
+            background-color: rgb(255, 255, 255, 0.25);
+            ;
+        }
+    }
+
+    button {
+        height: 50px;
+        padding: 12px;
+
+        color: $white;
+        font-weight: 700;
+
+        background-color: $accent;
+
+        transition: background-color 0.2s ease-in;
+
+
+        &:hover {
+            background-color: saturate($accent, 10%);
+        }
+    }
+}
+
+.cta__form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 35px;
+    column-gap: 30px;
+}
