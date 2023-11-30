@@ -1,5 +1,4 @@
 .card {
-
     position: relative;
     display: inline-block;
 
@@ -64,4 +63,10 @@
     bottom: 44px;
     
     font-size: 24px;
+
+    @include mediaTablet {
+        font-size: 16px;
+        left: 30px;
+        bottom: 30px;
+    }
 }

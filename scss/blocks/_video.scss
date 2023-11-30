@@ -1,5 +1,23 @@
 .video {
+    position: relative;
+
     text-align: center;
+
+    // &::after {
+    //     content: "IV";
+        
+    //     position: absolute;
+    //     top: 0;
+    //     left: calc(50% + 555px);
+    //     transform: translate(-50%, 0);
+    //     line-height: 1.15;
+
+
+    //     font-family: $font-accent;
+    //     opacity: 0.02;
+    //     font-size: 400px;
+    //     font-weight: 700;
+    // }
 }
 
 .visually-hidden {}
@@ -33,6 +51,11 @@
     transform: translate(-50%, -50%);
 
     transition: transform 0.2s ease-in;
+
+    @include mediaTablet {
+        width: 80px;
+        height: 80px;
+    }
     
 }
 

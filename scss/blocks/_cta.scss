@@ -14,11 +14,19 @@
 .cta__row {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 30px;
+    gap: 30px;
+
+    @include mediaTablet {
+        grid-template-columns: 1fr
+    }
 }
 
 .cta__text {
     line-height: 1.5;
+
+    @include mediaTablet {
+        font-size: 14px;
+    }
 }
 
 .form {
@@ -29,7 +37,11 @@
         font-size: 13px;
         line-height: 1.23;
         color: $muted;
-        text-align: center
+        text-align: center;
+
+        @include mediaTablet {
+            grid-row: 4 / 5;
+        }
     }
 
     input {
@@ -78,4 +90,8 @@
     grid-template-columns: 1fr 1fr;
     row-gap: 35px;
     column-gap: 30px;
+
+    @include mediaTablet {
+        grid-template-columns: 1fr
+    }
 }

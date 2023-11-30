@@ -32,6 +32,10 @@ a {
     font-size: 36px;
     font-weight: 700;
     color: $accent;
+
+    @include mediaTablet {
+        font-size: 30px;
+    }
 }
 
 .visually-hidden {
@@ -50,4 +54,8 @@ a {
 
 .none {
     display: none !important;
+}
+
+.no-scroll {
+    overflow-y: hidden;
 }

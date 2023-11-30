@@ -2,19 +2,21 @@
     position: relative;
     font-size: 18px;
 
-    padding-left: 35px;
+    padding-left: 26px;
 
     &::after {
         content: "";
         
         position: absolute;
         left: 0px;
-        top: 0px;
+        top: 50%;
         width: 21px;
         height: 21px;
+        transform: translate(0%, -50%);
         
         
         background-repeat: no-repeat;
+        background-position: center;
     }
 
     &--map::after {
@@ -23,5 +25,9 @@
 
     &--tel::after {
         background-image: url('/img/header/phone.svg');
+    }
+
+    @include mediaTablet {
+        
     }
 }
